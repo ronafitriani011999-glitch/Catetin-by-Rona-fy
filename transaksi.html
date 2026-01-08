@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.jpeg" alt="Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Form Transaksi</h2>
+
+    <form id="formTransaksi">
+        <label>Nama Transaksi</label>
+        <input type="text" id="nama">
+
+        <label>Jumlah</label>
+        <input type="number" id="jumlah">
+
+        <label>Kategori</label>
+        <input type="text" id="kategori">
+
+        <button type="submit">Simpan</button>
+        <p id="pesanError"></p>
+    </form>
+
+    <h2>Daftar Transaksi</h2>
+    <table id="tabelTransaksi" border="1">
+        <thead>
+        <tr>
+            <th>Nama Transaksi</th>
+            <th>Jumlah</th>
+            <th>Kategori</th>
+        </tr>
+        </thead>
+        <tbody id="bodyTransaksi">
+        <tr>
+            <td>Pembelian Buku</td>
+            <td>50000</td>
+            <td>Pendidikan</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>© 2026 - Made with 💖 by Rona Fitriyani</p>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>

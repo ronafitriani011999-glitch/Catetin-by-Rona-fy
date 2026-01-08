@@ -1,0 +1,380 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    color: #c7436a;
+    background: #fde4ec;
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.logo{
+    width: 50px;
+    height:50px;
+    border-radius: : 50px;
+    background: white;
+    padding: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+header {
+    background: palevioletred;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: :space-between;
+    padding: 15px 30px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #f48fb1;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: auto;
+    gap: 30px;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+.main a{
+    color: #c7436a;
+    text-decoration: none;
+}
+main {
+    max-width: 1000px;
+    flex: 1;
+    margin: auto;
+    padding: 30px;
+}
+main h1{
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid rosybrown;
+    padding: 8px;
+}
+
+footer {
+    background:palevioletred;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    /* ===== Beranda (Index) ===== */
+.container{
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 30px 0 60px;
+}
+
+.hero{
+  display: flex;
+  gap: 25px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+.hero h1{
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+.hero-divider{
+    width:60px;
+    height: 6px;
+    background: white;
+    border-radius:10px;
+    margin: 14px0;
+}
+
+.brand{
+  background: rgba(255,255,255,0.4);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.subtitle{
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  background:#f48fb1;
+  color: white;
+  font-weight: 600;
+}
+
+.btn:hover{ opacity: .9; }
+
+.btn-outline{
+  background: transparent;
+  border: 2px solid white;
+  color: palevioletred;
+}
+.section-card{
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(231,84,128,0.25);
+    margin-bottom: 25px;
+}
+
+.hero-card{
+  min-width: 260px;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.hero-card h3{
+  margin-top: 0;
+}
+
+.features{
+  margin-top: 35px;
+}
+
+.features h2{
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card{
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 16px;
+  transition: transform .2s;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero{ flex-direction: column; }
+  .grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px){
+  .grid{ grid-template-columns: 1fr; }
+}
+/* ===== Card Konten ===== */
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.content-card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(231,84,128,0.25);
+}
+
+/* Checklist */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.checklist li::before {
+  content: "✔";
+  color: #e75480;
+  margin-right: 10px;
+}
+
+/* Grid fitur */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.feature-card {
+  background: #fde4ec;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #f5b7c9;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(231,84,128,0.3);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #c7436a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Beranda Card Layout ===== */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.content-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(231,84,128,0.25);
+}
+
+/* Dua kolom */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+/* Checklist */
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.checklist li::before {
+  content: "✔ ";
+  color: #e75480;
+  font-weight: bold;
+}
+
+/* Card fitur */
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.feature-card {
+  background: #fde4ec;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #f5b7c9;
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+.hint-text{
+    color:#f48fb1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .login-form {
+  max-width: 420px;
+  margin: 60px auto;
+  text-align: center;
+  background-color: #ffffff;
+  padding:30px ;
+  box-shadow: 0 10px 25px rgba(231,84,128,0.25);
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* TOMBOL LOGIN */
+.btn-login {
+  margin-top: 20px;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, #f06292 , #ec407a);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all0.3s ease;
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #f06292 , #ec407a);
+  transform: translate(-2px);
+  box-shadow: 0 8px 18px rgba (216,27,96,0.4);
+}
+}

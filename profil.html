@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Proteksi halaman (harus login) -->
+<script>
+  if (localStorage.getItem("login") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<header>
+  <img src="logo.jpeg" alt="Logo Catetin">
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="transaksi.html">Transaksi</a></li>
+      <li><a href="profil.html">profil</a></li>
+      <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Profil Aplikasi</h2> 
+
+  <p>
+    <strong>Catetin</strong> adalah aplikasi web sederhana yang dibuat untuk
+    membantu pengguna dalam mencatat transaksi keuangan, baik pemasukan
+    maupun pengeluaran.
+  </p>
+
+  <h3>Tujuan Pembuatan</h3>
+  <p>
+    Aplikasi ini dibuat sebagai bagian dari tugas UTS mata kuliah
+    <strong>Pemrograman Web I</strong>, dengan tujuan untuk menerapkan konsep
+    dasar HTML, CSS, dan JavaScript dalam membangun aplikasi web.
+  </p>
+
+  <h3>Fitur Aplikasi</h3>
+  <ul>
+    <li>Pencatatan transaksi keuangan</li>
+    <li>Menampilkan daftar transaksi</li>
+    <li>Validasi form menggunakan JavaScript</li>
+    <li>Login dan logout sederhana</li>
+    <li>Tampilan web responsif</li>
+  </ul>
+
+  <h3>Profil Pembuat</h3>
+  <table border="1" cellpadding="8">
+    <tr>
+      <td>Nama</td>
+      <td>Rona Fitriyani</td>
+    </tr>
+    <tr>
+      <td>NIM</td>
+      <td>251011701083</td>
+    </tr>
+    <tr>
+      <td>Mata Kuliah</td>
+      <td>Pemrograman Web I</td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td>082-111-277-016</td>
+    </tr>
+  </table>
+</main>
+
+<footer>
+  <p>©️ 2026 - Made with 💖 by Rona Fitriyani</p>
+</footer>
+
+<script>
+  function logout() {
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>

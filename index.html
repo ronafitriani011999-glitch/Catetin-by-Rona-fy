@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title> Catetin by Rona</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script>
+  if (localStorage.getItem("login") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
+
+<header>
+    <img src="logo.jpeg" alt="logo catetin" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="#" onclick="logout()">logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+  <div class="section-card">
+
+    <h1>Hai, Selamat datang di <span class="brand"> Catetin 💖</span></h1>
+    <p class="subtitle">
+    Yuk, mulai catat pemasukkan dan pengeluaran harianmu supaya lebih terkontrol.</p>
+    <p class="hint-text">Mulai dari langkah kecil hari ini!</p>
+
+    <a href="transaksi.html" class="btn">📝 Mulai catat transaksi 📝</a>
+    <div class="hero-divider"></div>
+        <h2>Fitur Utama :</h2>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <li> Pencatatan </li>
+            <p>Input transaksi pemasukan dan pengeluaran dengan cepat.</p>
+          </div>
+
+          <div class="feature-card">
+            <li> Kategori </li>
+            <p>Kelompokkan transaksi berdasarkan kategori agar mudah dicari.</p>
+          </div>
+
+          <div class="feature-card">
+            <li> Daftar transaksi </li>
+            <p>Transaksi ditampilkan dalam tabel yang rapi dan jelas.</p>
+          </div>
+
+          <div class="feature-card">
+            <li> Fitur responsif </li>
+            <p>Tampilan menyesuaikan layar laptop maupun HP.</p>
+    </div>
+</main>
+<footer>
+    <p>© 2026 Catetin - Made with 💖 by Rona Fitriyani</p>
+</footer>
+<script src="js/script.js"></script>
+<script>
+  function logout() {
+    localStorage.removeItem("login");
+    window.location.href = "login.html";
+  }
+</script>
+
